@@ -1,0 +1,277 @@
+/* KEYFRAMES */
+@keyframes search-width {
+  0%{width: 7em;}
+  100%{width: 20em; border-radius: 15%}
+}
+.search-width{
+  animation: search-width 0.5s both linear
+}
+/* KEYFRAMES */
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap'); 
+/* IMPORTS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald"
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(185, 0, 0);
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+.App{
+  height: 100%;
+  width: 100%;
+}
+
+/* main */
+.search{
+  display: flex;
+  justify-content: center;
+}
+.search-2{
+  padding: 2em;
+  width: 7em;
+  height: 7em;
+  margin: 0.7em;
+  color: black;
+  background: #f2f2f2;
+ border: 1px solid black;
+  border-radius: 50%; 
+  transition:0.5s;
+  box-shadow: 0 3px 10px 1px rgb(0, 0, 0);
+}
+  .search-2:hover{
+  color: black;
+  background:rgb(186, 186, 186);
+  transition:0.5s;
+  }
+/* main */
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(2);
+  grid-gap: 1em;
+  list-style:none;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.prev-next{
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.prev-next button{
+  box-shadow: inset 0px 0 0 0 red;
+background-color: white;
+  font-size: 32px;
+  transition: 1s;
+}
+.prev-next button:hover{
+  box-shadow: inset 300px 0 0 0 red;
+  transition: 1s;
+  color:white;
+}
+
+/* CARD DETAILS */
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20em;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 1em;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px 1px rgb(0, 0, 0);
+}
+.data-id-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+}
+.btn-go-id{
+  background: none;
+  padding: 0.4em;
+border: none;
+cursor: pointer;
+margin: 0.6em;
+box-shadow: 0 3px 10px 1px rgb(0, 0, 0);
+}
+
+/* DATA TYPES */
+.data-types{
+  display: flex;
+  gap: 1em;
+}
+.data-types p{
+font-weight: 400;
+
+  padding: 0.4em;
+}
+.data-type-normal{
+background-color: #A8A77A;
+}
+.data-type-fighting{
+background-color: #C22E28;
+}
+.data-type-flying{
+background-color: #A98FF3;
+}
+.data-type-poison{
+background-color: #A33EA1;
+}
+.data-type-ground{
+background-color: #E2BF65;
+}
+.data-type-rock{
+background-color: #B6A136;
+}
+.data-type-bug{
+background-color: #A6B91A;
+}
+.data-type-ghost{
+background-color: #735797;
+}
+.data-type-steel{
+background-color: #B7B7CE;
+}
+.data-type-fire{
+background-color: #EE8130;
+}
+.data-type-water{
+background-color: #6390F0;
+}
+.data-type-grass{
+background-color: #7AC74C;
+}
+.data-type-electric{
+background-color: #F7D02C;
+}
+.data-type-psychic{
+background-color: #F95587;
+}
+.data-type-ice{
+background-color: #96D9D6;
+}
+.data-type-dragon{
+background-color: #6F35FC;
+}
+.data-type-dark{
+background-color: #705746;
+}
+.data-type-fairy{
+background-color: #D685AD;
+}
+.data-type-unknow{
+
+}
+.data-type-shadow{
+
+}
+/* DATA TYPES */
+
+
+/* CARD DETAILS */
+
+
+/* POKE DETAILS */
+.arrow{
+color: black;
+padding: 0.5em;
+border: 1px solid black;
+border-radius: 50%;
+transition:0.5s;
+}
+.arrow:hover{
+color: red;
+background-color: black;
+transition:0.5s;
+}
+.poke-detail{
+  display: grid;
+  place-content: center;
+height: 100%;
+}
+.poke-detail-card{
+  background-color: #f2f2f2;
+  width: 40em;
+  height: 40em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px 1px rgb(0, 0, 0);
+  border: 10px solid red;
+}
+.poke-detail-card::after{
+content: "";
+position: absolute;
+z-index: 1;
+width: 38.8em;
+height: 0.5em;
+background-color: rgb(0, 0, 0);
+opacity: 1;
+}
+.poke-detail-data{
+  z-index: 10;
+}
+.poke-detail h2{
+  font-size: 32px;
+font-weight: 400;
+}
+.poke-detail .detail-id-name{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  z-index: 10;
+}
+.poke-detail-image{
+  transform: translateY(2.5em);
+}
+.stats-height{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.abilities-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abilities-title{
+  display: flex;
+  justify-content: center;
+}
+.abilities-title h3{
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+.abilities{
+  display: flex;
+  text-transform: uppercase;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* POKE DETAILS */
