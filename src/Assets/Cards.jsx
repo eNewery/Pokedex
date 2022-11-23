@@ -9,7 +9,7 @@ export const Cards = ({results}) => {
 
           results.map(pokemon => (
             <li key={pokemon.name}>
-              <CardPokemon url={pokemon.url}/>
+             <CardPokemon url={pokemon.url}/>
               <h1></h1>
             </li>
           ))

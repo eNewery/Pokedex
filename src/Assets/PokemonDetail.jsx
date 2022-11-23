@@ -12,7 +12,6 @@ divAbilities.appendChild(paragraph)
 paragraph.innerText =  `${data}`
 }
 setTimeout(() => {
-  
   const image = items.sprites.front_default;
  const imgContainer = document.querySelector(".poke-detail-image")
  imgContainer.innerHTML = `<img width="226px" src="${image}"/>`
